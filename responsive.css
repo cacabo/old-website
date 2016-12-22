@@ -1,0 +1,710 @@
+@charset "utf-8";
+/*********************************************
+	Code by Cameron Cabo, all rights reserved
+	
+	RESPONSIVE
+*********************************************/
+
+@media screen and (max-width: 480px) {
+	.top {
+		height: .75in;
+		font-size: 125%;
+	}
+	
+	.top h {
+		top: -5%;
+	}
+	
+	.top-background {
+		height: .8in;
+	}
+}
+
+@media screen and (min-width: 480px) and (min-device-width: 480px) {
+	.summary {
+		display: block;
+		height: auto;
+		position: relative;
+		background-color: #ff6666;
+		padding: .25in;
+		padding-bottom: 0;
+		min-height: 2.25in;
+	}
+	
+	.summary .image {
+		display: block;
+		width: auto;
+		height: auto;
+		float: left;
+		background-color: white;
+	}
+	
+	.summary .image img {
+		width: auto;
+		height: 2in;
+	}
+	
+	.summary .summarytext {
+		display: block;
+		position: relative;
+		text-align: left;
+		min-height: 2in;
+		margin: 0;
+		margin-left: 2.25in;
+		padding: 0;
+		top:-.165in;
+		width-max: 8in;
+	}
+	
+	.summary .summarytext h1 {
+		font-size: 75%;
+		font-weight: bold;
+		text-align: left;
+		color: white;
+		position: relative;
+		top: 0;
+		line-height: 100%;
+	}
+	
+	.summary .summarytext p  {
+		top: -.05in;
+		line-height: 1.5;
+		position: relative;
+		font-size: 50%;
+		text-align: left;
+	}
+	
+	.text {
+		display: block;
+		position: relative;
+		clear: both;
+		background-color: whitesmoke;
+		width: 100%;
+		margins: 0;
+		height: 192px;
+	}
+	
+	.text p {
+		color: #474747;
+		font-size: 50%;
+		top: 0;
+	}
+	
+	.section {
+		display: inline-block;
+		min-width: 3in;
+		position: relative;
+		float: left;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		white-space: nowrap;
+		background-color: whitesmoke;
+	}
+	
+	.title {
+		display: block;
+		position: relative;
+		top: -.165in;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.title p {
+		color: #474747;
+		font-size: 100%;
+		font-weight: bold;
+		text-align: left;
+		position: relative;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	
+	/******************************
+		Changing fact date & title to one line
+	******************************/
+	
+	.fact {
+		margin: 2.5%;
+		width: 90%;
+	}
+	
+	.fact h {
+		float: left;
+		font-size: 60%;
+		clear: none;
+		display: block;
+		position: relative;
+		width: 62.5%;
+	}
+	
+	.fact h1 {
+		float: right;
+		text-align: right;
+		font-size: 60%;
+		display: block;
+		position: relative;
+		width: 32.5%;
+		top: -.05in;
+	}
+	
+	.title3 {
+		width: calc(100% - 1.25in);
+	}
+	
+	
+	/******************************
+		Changing design date & title to one line
+	******************************/
+	
+	.design h {
+		float: left;
+		font-size: 60%;
+		clear: none;
+		display: block;
+		position: relative;
+		width: 62.5%;
+	}
+	
+	.design h1 {
+		float: right;
+		text-align: right;
+		font-size: 60%;
+		display: block;
+		position: relative;
+		width: 32.5%;
+		top: -.05in;
+	}
+	
+	.designtitle {
+		width: calc(100% - 1.75in);
+	}
+	
+	/******************************
+		Changing navigation bar to one line
+	******************************/
+	nav ul li a {
+		width: 25%;
+		float: left;
+		line-height: .5in;
+		font-size: 50%;
+	}
+	
+	nav {
+		height: .5in;
+		padding: 0 10%;
+		top: -.5in;
+	}
+	
+	#home {
+		top: -.33in;
+	}
+		
+	.footerhome {
+		top: -.33in;
+	}
+	
+	footer {
+		top: -.5in;
+	}
+}
+
+
+
+/******************************
+	Intended for small devices (phones)
+******************************/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+and (max-device-width: 480px) {
+	
+	.top {
+		height: 1.5in;
+	}
+	
+	.top-background {
+		height: 1.5in;
+	}
+	
+	.top h {
+		line-height: 1.5in;
+		font-size: 125%;
+	}
+	
+	.summary {
+		display: block;
+		height: auto;
+		position: relative;
+		background-color: #ff6666;
+		padding: .25in;
+		padding-bottom: 0;
+		min-height: 2.25in;
+	}
+	
+	.summary .image {
+		display: block;
+		width: auto;
+		height: auto;
+		float: left;
+		background-color: white;
+	}
+	
+	.summary .image img {
+		width: auto;
+		height: 2in;
+	}
+	
+	.summary .summarytext {
+		display: block;
+		position: relative;
+		text-align: left;
+		min-height: 2in;
+		margin: 0;
+		margin-left: 2.25in;
+		padding: 0 0 .25in 0;
+		top:-.165in;
+		width-max: 8in;
+		float: none;
+		clear: none;
+	}
+	
+	.summary .summarytext h1 {
+		font-size: 125%;
+		font-weight: bold;
+		text-align: left;
+		color: white;
+		position: relative;
+		top: 0;
+		line-height: 1;
+	}
+	
+	.summary .summarytext p  {
+		top: -.1in;
+		line-height: 1.25;
+		position: relative;
+		font-size: 100%;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.text {
+		display: block;
+		position: relative;
+		clear: both;
+		background-color: whitesmoke;
+		width: 100%;
+		margins: 0;
+		height: 192px;
+	}
+	
+	.text p {
+		color: #474747;
+		font-size: 75%;
+		top: 0;
+	}
+	
+	.section {
+		display: inline-block;
+		min-width: 3in;
+		position: relative;
+		float: left;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		white-space: nowrap;
+		background-color: whitesmoke;
+	}
+	
+	.title {
+		display: block;
+		position: relative;
+		top: -.165in;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.title p {
+		color: #474747;
+		font-size: 125%;
+		font-weight: bold;
+		text-align: left;
+		position: relative;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	
+	.item {
+		font-size: 85%;
+	}
+	
+	.fa {
+		width: 1in;
+		height: 1in;
+		line-height: 1in;
+		font-size: .5in;
+		text-align: center;
+		border-radius: 100%;
+	}
+	
+	.section {
+		margin-right: 15%;
+	}
+	
+	.title2 {
+		font-size: 100%;
+	}
+	
+	/******************************
+		Changing fact date & title to one line
+	******************************/
+	
+	.title3 {
+		font-size: 150%;
+	}
+	
+	.fact {
+		margin: 2.5%;
+		width: 90%;
+	}
+	
+	.fact h {
+		float: left;
+		font-size: 80%;
+		clear: none;
+		display: block;
+		position: relative;
+		width: 62.5%;
+	}
+	
+	.fact h1 {
+		float: right;
+		text-align: right;
+		font-size: 80%;
+		display: block;
+		position: relative;
+		width: 32.5%;
+		top: -.15in;
+	}
+	
+	.fact p {
+		font-size: 80%;
+	}
+	
+	.resume-image {
+		width: 1.25in;
+	}
+	
+	.title3 {
+		width: calc(100% - 1.5in);
+	}
+	
+	.resume .fa {
+		font-size: 100%;
+	}
+	
+	.resume p {
+		font-size: 85%;
+	}
+	
+	/******************************
+		Changing design date & title to one line
+	******************************/
+	
+	.gallery p, .gallery h, .gallery h1{
+		font-size: 85%;
+	}
+	
+	
+	
+	/******************************
+		Changing design date & title to one line
+	******************************/
+	
+	.design h {
+		float: left;
+		font-size: 100%;
+		clear: none;
+		display: block;
+		position: relative;
+		width: 62.5%;
+	}
+	
+	.design h1 {
+		float: right;
+		text-align: right;
+		font-size: 100%;
+		display: block;
+		position: relative;
+		width: 32.5%;
+		top: -.05in;
+	}
+	
+	.design p {
+		font-size: 85%;
+	}
+	
+	.design-image {
+		width: 1.75in;
+	}
+	
+	.designtitle {
+		width: calc(100% - 2in);
+	}
+	
+	
+	
+	/******************************
+		Changing navigation bar to one line
+	******************************/
+	nav ul li a {
+		width: 25%;
+		float: left;
+		line-height: 1in;
+		font-size: 100%;
+	}
+	
+	nav {
+		height: 1in;
+		padding: 0 10%;
+		top: -.5in;
+	}
+	
+	#home {
+		top: -.33in;
+	}
+		
+	.footerhome {
+		top: -.33in;
+	}
+	
+	footer {
+		top: -.5in;
+	}
+	
+	footer h {
+		line-height: 1in;
+	}
+}
+
+
+@media screen and (min-width: 660px) {
+	nav {
+		top: -.7in;
+	}
+	
+	footer {
+		top: -.7in;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.top {
+		height: 1in;
+	}
+	.top-background {
+		height: 1.25in;
+	}
+	
+	.top h {
+		font-size: 100%;
+		line-height: 1in;
+	}
+	
+	.summary {
+		height: 3in;
+	}
+	
+	.summary .image {
+		width: 3in;
+		height: 3in;
+	}
+	
+	.summary .image img {
+		width: 3in;
+		height: 3in;
+	}
+	
+	.summary {
+		padding: 5%;
+	}
+	
+	section {
+		padding: 5% 10% 5% 10%;
+	}
+	
+	.section {
+		padding-right: 10%;
+	}
+	
+	.summary .summarytext {
+		margin-left: 4in;
+	}
+	
+	.summary .summarytext h1 {
+		font-size: 160%;
+	}
+	
+	.summary .summarytext p {
+		font-size: 85%;
+	}
+	
+	.section .title p {
+		font-size: 135%;
+	}
+	
+	.item li {
+		font-size: 160%;
+	}
+	
+	.fa {
+		height: .75in;
+		width: .75in;
+		line-height: .75in;
+		font-size: 250%;
+	}
+	
+	/******************************
+		Changing About section to 2 columns
+	******************************/
+	
+	.title2 {
+		width: 100%;
+		clear: both;
+		font-size: 160%;
+	}
+	
+	.fact {
+		margin: 2.5% 0;
+		width: 42.5%;
+		float: left;
+		clear: none;
+	}
+	
+	.title3 {
+		width: auto;
+		top: -.165in;
+	}
+	
+	.fact h {
+		width: auto;
+		float: none;
+		clear: right;
+	}
+	
+	.fact h1 {
+		width: auto;
+		float: left;
+		text-align: left;
+	}
+	
+	.fact:nth-child(2n) {
+		float: right;
+	}
+	
+	.fact:nth-child(2n+1) {
+		position: relative;
+		float: left;
+		margin-right: 5%;
+	}
+	
+	
+	
+	
+	/******************************
+		Changing Design section to 2 columns
+	******************************/
+	
+	.title2 {
+		width: 100%;
+		clear: both;
+		font-size: 175%;
+	}
+	
+	.design {
+		margin: 2.5% 0;
+		width: 42.5%;
+		float: left;
+		clear: none;
+		padding: 2.5%;
+	}
+	
+	.designtitle {
+		width: auto;
+		top: -.165in;
+	}
+	
+	.design h {
+		width: auto;
+		float: none;
+		clear: right;
+	}
+	
+	.design h1 {
+		width: auto;
+		float: left;
+		text-align: left;
+	}
+	
+	.design-image {
+		width: 2in;
+	}
+	
+	.design:nth-child(2n) {
+		float: left;
+		margin-right: 5%;
+	}
+	
+	.design:nth-child(2n+1) {
+		float: right;
+		clear: right;
+	}
+	
+	
+	/******************************
+		Changing Art section to 4 columns
+	******************************/
+	
+	.column {
+		overflow: auto;
+		width: 50%;
+		float: left;
+	}
+	
+	/******************************
+		Footer
+	******************************/
+	
+	nav {
+		font-size: 160%;
+		height: 1in;
+		line-height: 1in;
+		top: -1in;
+	}
+	
+	nav ul {
+		top: .25in;
+	}
+	
+	footer {
+		height: 1in;
+		top: -1in;
+	}
+	
+	footer h {
+		line-height: 1.5in;
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1204px) {
+	.resume-image {
+		width: 2in;
+	}
+	
+	footer h {
+		top: -.25in;
+		font-size: 28px;
+	}
+}

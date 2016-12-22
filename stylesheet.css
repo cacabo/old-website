@@ -1,0 +1,623 @@
+@charset "utf-8";
+/*********************************************
+	Code by Cameron Cabo, all rights reserved
+	
+	STYLESHEET
+*********************************************/
+
+
+
+/******************************
+    GENERAL
+******************************/
+
+body {
+	font-family: Alegreya Sans, Sans-Serif;
+	background-color: white;
+	font-size: 32px;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+p {
+	text-align: center;
+	color: white;
+	font-size: 550%;
+	width: 100%;
+}
+
+h {
+	font-size: 50%;
+	text-align: center;
+	color: #606060;
+	top: 12px;
+	width: 100%;
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+	color: #606060;
+	top: 12px;
+	width: 100%;
+}
+
+a {
+	color: #474747;
+	text-decoration: none;
+}
+
+/******************************
+    HEADER
+******************************/
+
+.top {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	color: white;
+	width: 100%;
+	height: .75in;
+	font-size: 150%;
+	padding: 0;
+	margins: 0;
+	z-index: 2;
+	background-color: white;
+	text-align: center;
+}
+
+.top-background {
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	height: .9in;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.top h {
+	color: black;
+	weight: bold;
+	z-index: 2;
+	line-height: .75in;
+}
+
+/******************************
+    HOME
+******************************/
+.container {
+  	display: block;
+	position: relative;
+	top: -0px;
+	vertical-align: top;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 0px;
+  	margin-top: 0px;
+	padding-bottom: 0px;
+  	margin-bottom: 0px;
+}
+
+/******************************
+    OTHER PAGES
+******************************/
+section {
+	background-color: whitesmoke;
+	display: inline-block;
+	position: relative;
+	top: -.165in;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.summary {
+	display: block;
+	height: auto;
+	position: relative;
+	padding: .25in;
+	padding-bottom: 0;
+	min-height: 2.25in;
+}
+
+#peach {
+	background-color: #ff6666;
+}
+
+#green {
+	background-color: #00cc66;
+}
+
+#blue {
+	background-color: #1a8cff;
+}
+
+.summary .image {
+	display: block;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	margin: 0 0 .25in 0;
+}
+
+.summary .image img {
+	width: 100%;
+	height: auto;
+}
+
+.summary .summarytext {
+	display: block;
+	position: relative;
+	text-align: left;
+	margin: 0;
+	padding: 0 0 .165in;
+	top: 0;
+	width-max: 8in;
+}
+
+.summary .summarytext h1 {
+	font-size: 75%;
+	font-weight: bold;
+	text-align: left;
+	color: white;
+	position: relative;
+	top: 0;
+	line-height: 100%;
+}
+
+.summary .summarytext p  {
+	top: -.05in;
+	line-height: 1.5;
+	position: relative;
+	font-size: 50%;
+	text-align: left;
+}
+
+.text {
+	display: block;
+	position: relative;
+	clear: both;
+	background-color: whitesmoke;
+	width: 100%;
+	margins: 0;
+	padding: 5% 0;
+}
+
+.text p {
+	color: #474747;
+	font-size: 50%;
+	top: 0;
+	line-height: 1;
+}
+
+.section {
+	display: inline-block;
+	position: relative;
+	margin: 0 10% 0;
+	white-space: nowrap;
+	background-color: whitesmoke;
+}
+
+
+/******************************
+    CONTACT
+******************************/
+
+.title {
+	display: block;
+	position: relative;
+	margin: 0 10% 10% 10%;
+}
+
+.title p {
+	color: #474747;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.item {
+	display: block;
+	position: relative;
+	top: -.165in;
+	color: #474747;
+	font-size: 50%;
+	line-height: 1.5;
+	margin: 0 0 0 10%;
+	z-index: 1;
+}
+
+.item ul {
+	list-style: none;
+}
+
+.item ul a {
+	color: #474747;
+	text-decoration: none;
+}
+
+
+
+/******************************
+    ABOUT
+******************************/
+
+#full-width {
+	width: 95%;
+	padding: 2.5%;
+	margin: 0;
+}
+
+/*Elements in the resume portion of the about section*/
+.title2 {
+	display: block;
+	position: relative;
+	clear: both;
+	padding: .125in 0;
+}
+
+.title2 p {
+	color: #474747;
+	font-size: 75%;
+	width: 100%;
+	padding: 0;
+	top: 0in;
+	margin: .125in 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.fact {
+	display: inline-block;
+	width: 95%;
+	position: relative;
+	clear: both;
+	margin: .125in 0;
+	background-color: white;
+	padding: 2.5%;
+    box-shadow: 2px 6px 20px #BBBBBB;
+}
+
+.resume-image {
+	display: block; 
+	position: relative;
+	width: 1in;
+	margin: 0 .25in .25in 0;
+	height: auto;
+	float: left;
+	clear: none;
+}
+
+.fact h {
+	font-weight: bold;
+	font-size: 50%;
+	text-align: left;
+	float: left;
+	width: auto;
+	clear: right;
+	line-height: 1.25;
+}
+
+.fact h1 {
+	font-size: 50%;
+	font-style: italic;
+	text-align: left;
+	width: auto;
+	clear: right;
+	line-height: 1.25;
+}
+
+.fact p {
+	text-align: left;
+	font-size: 50%;
+	color: #474747;
+	margin: 0;
+	padding: 0;
+	line-height: 1.25;
+	clear: both;
+}
+
+.title3 {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 2.5%;
+	float: left;
+	clear: right;
+}
+
+.resume {
+	margin: 5% calc(50% - 1.75in);
+	width: auto;
+	display: inline-block;
+	min-width: 3.5in;
+}
+
+.resume p {
+	font-size: 75%;
+	color: #474747;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	overflow: auto;
+}
+
+
+
+/******************************
+    ART
+******************************/
+
+#pictures {
+	padding: 0;
+	margin: 0;
+}
+
+.gallery {
+	background-color: white;
+	margin: 2.5%;
+	width: 45%;
+	float: left;
+	height: auto;
+	box-shadow: 2px 6px 20px #BBBBBB;
+}
+
+.gallery:nth-child(2n) {
+	float: right;
+}
+
+.gallery h {
+	font-style: italic;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+
+.gallery h1 {
+	font-size: 50%;
+	text-align: left;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+}
+
+.gallery p {
+	font-size: 50%;
+	color: #474747;
+	text-align: left;
+	line-height: 1;
+	padding-top: 5%;
+	margin: 0;
+}
+
+.title4 {
+	padding: 5%;
+}
+
+
+
+/******************************
+    DESIGN
+******************************/
+
+.design {
+	display: inline-block;
+	width: 85%;
+	position: relative;
+	clear: both;
+	margin: 2.5%;
+	background-color: white;
+	padding: 5%;
+    box-shadow: 2px 6px 20px #BBBBBB;
+}
+
+.design-image {
+	display: inline-block; 
+	position: relative;
+	width: 1.5in;
+	margin: 0 .25in .25in 0;
+	height: auto;
+	float: left;
+	clear: none;
+}
+
+.design h {
+	font-weight: bold;
+	font-size: 50%;
+	text-align: left;
+	float: left;
+	width: auto;
+	clear: right;
+	line-height: 1.25;
+}
+
+.design h1 {
+	font-size: 50%;
+	font-style: italic;
+	text-align: left;
+	width: auto;
+	line-height: 1.25;
+}
+
+.design p {
+	position: relative;
+	text-align: left;
+	font-size: 50%;
+	color: #474747;
+	margin: 0;
+	padding: 0;
+	line-height: 1.25;
+	float: none;
+	clear: none;
+}
+
+.designtitle {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 2.5%;
+	float: none;
+	clear: right;
+}
+
+#last {
+	margin-bottom: 10%;
+}
+
+
+/******************************
+    ICONS, HOVERING, ETC.
+******************************/
+
+.top h:hover {
+	text-shadow: 4px 4px 6px #999999;
+}
+
+.fa {
+    width: .5in;
+    height: .5in;
+    line-height: .5in;
+    font-size: .25in;
+	text-align: center;
+    background-color: #888888;
+    color: whitesmoke;
+	border-radius: 100%;
+}
+
+.resume .fa {
+    font-size: 75%;
+	width: auto;
+	height: auto;
+	background-color: whitesmoke;
+	text-align: center;
+    color: #474747;
+	margin-right: 2.5%;
+}
+
+.item i {
+	margin-left: 10%;
+}
+
+.fa-linkedin:hover {
+	background-color: #0077B5;
+}
+
+.fa-facebook:hover {
+	background-color: #3b5998;
+}
+
+.fa-instagram:hover {
+	background-color: #e95950;
+}
+
+img:hover {
+	opacity: .75;
+}
+
+.image h {
+	opacity: 0;
+}
+
+.image h:hover {
+	opacity: 1;
+}
+
+.image p {
+	opacity: 0;
+}
+
+.image p:hover {
+	opacity: 1;
+}
+
+.item ul a:hover {
+	text-decoration: underline;
+}
+
+.fact p a:hover {
+	text-decoration: underline;
+}
+
+nav ul a:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+/******************************
+    FOOTER
+******************************/
+
+
+nav {
+	display: block;
+	background-color: lightgray;
+	color: #474747;
+	line-height: 1.25;
+	position: relative;
+	padding: .05in;
+	top: -.165in;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 100%;
+	padding-left: 0;
+	width: 100%;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #474747;
+}
+
+nav ul li #selected {
+	color: white;
+}
+
+footer {
+	display: block;
+	position: relative;
+	background-color: white;
+	clear: both;
+	width: 100%;
+	height: 48px;
+	border-color: gray;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	text-align: center;
+	top: -.165in;
+}
+
+footer h {
+	color: black;
+	line-height: 48px;
+	font-size: 18px;
+}
+
+.footerhome {
+	top: 0;
+	z-index: 3;
+}
+
+/*homepage only*/
