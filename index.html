@@ -12,15 +12,17 @@
 		
 		<meta charset="UTF-8">
         <meta name="description" content="Engineer, businessman, designer. Jerome Fisher Program at the University of Pennsylvania.">
-        <meta name="keywords" content="Cameron, Cabo,Cameron Cabo,Cam Cabo,cameroncabo.com,UPenn,University of Pennsylvania,Penn,Harvard-Westlake,computer science,design,art,business,engineering,M&T,Jerome Fisher,Jerome Fisher Program,Jerome Fisher Program in Management and Technology,CSS,CSS3,HTML,HTML5,Ruby,Ruby on Rails,RoR,Javascript,designer,businessman">
+        <meta name="keywords" content="Cameron, Cabo,Cameron Cabo,Cam Cabo,cameroncabo.com,cameroncabo,UPenn,University of Pennsylvania,Penn,Harvard-Westlake,computer science,design,art,business,engineering,M&T,Jerome Fisher,Jerome Fisher Program,Jerome Fisher Program in Management and Technology,CSS,CSS3,HTML,HTML5,Ruby,Ruby on Rails,RoR,Javascript,designer,businessman">
         <meta name="author" content="Cameron Cabo">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,700i" rel="stylesheet">
         
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
         <link type="text/css" rel="stylesheet" href="responsive.css"/>
+        <link href="css/style.css" rel="stylesheet">
 		
 		<link rel="shortcut icon" href="Favicon/Favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
@@ -32,10 +34,35 @@
 		
 	</head>
   	<body>
-		<a href="index.html"><div class="top">
-			<h>C A M E R O N &nbsp; &nbsp; E. &nbsp; &nbsp; C A B O</h>
-		</div></a>
-		<a href="index.html"><div class = "top-background"></div></a>
+		
+		<nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
+	      <div class="container-fluid">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="index.html"><h1>CAMERON&nbsp;&nbsp;E.&nbsp;&nbsp;CABO</h1></a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="menu">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+	            <li><a href="about.html">About</a></li>
+	            <li class="disabled"><a href="cs.html">Computer Science</a></li>
+	            <li><a href="artdesign.html">Art/Design</a></li>
+	            <li><a href="contact.html">Contact</a></li>
+	          </ul>
+	        </div><!-- /.navbar-collapse -->
+	      </div><!-- /.container-fluid -->
+	    </nav>
+
+	    <div class="spacer"></div>
+
 		<div class="container">
 			<a href="about.html"><img src="Images/About.jpg" alt="About"></a>
 		</div>
@@ -45,18 +72,14 @@
 		<div class="container">
 			<a href="contact.html"><img src="Images/Contact.jpg" alt="Contact"></a>
 		</div>
-        <!--
-        <nav id="home">
-        	<ul>
-            	<li><a href="index.html" id="selected">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="artdesign.html">Art/Design</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        -->
-		<footer class="footerhome">
+
+		<footer>
 			<h>&copy Cameron Cabo 2016, All Rights Reserved.</h>
 		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
   	</body>
 </html>

@@ -26,9 +26,7 @@
 		height: auto;
 		position: relative;
 		background-color: #ff6666;
-		padding: .25in;
-		padding-bottom: 0;
-		min-height: 2.25in;
+		min-height: 2.5in;
 	}
 	
 	.summary .image {
@@ -45,15 +43,10 @@
 	}
 	
 	.summary .summarytext {
-		display: block;
-		position: relative;
-		text-align: left;
-		min-height: 2in;
 		margin: 0;
 		margin-left: 2.25in;
 		padding: 0;
-		top:-.165in;
-		width-max: 8in;
+		max-width: 8in;
 	}
 	
 	.summary .summarytext h1 {
@@ -62,12 +55,10 @@
 		text-align: left;
 		color: white;
 		position: relative;
-		top: 0;
 		line-height: 100%;
 	}
 	
 	.summary .summarytext p  {
-		top: -.05in;
 		line-height: 1.5;
 		position: relative;
 		font-size: 50%;
@@ -80,14 +71,13 @@
 		clear: both;
 		background-color: whitesmoke;
 		width: 100%;
-		margins: 0;
+		margin: 0;
 		height: 192px;
 	}
 	
 	.text p {
 		color: #474747;
 		font-size: 50%;
-		top: 0;
 	}
 	
 	.section {
@@ -103,9 +93,6 @@
 	}
 	
 	.title {
-		display: block;
-		position: relative;
-		top: -.165in;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -126,7 +113,7 @@
 	
 	.fact {
 		margin: 2.5%;
-		width: 90%;
+		width: 95%;
 	}
 	
 	.fact h {
@@ -179,37 +166,18 @@
 	.designtitle {
 		width: calc(100% - 1.75in);
 	}
-	
-	/******************************
-		Changing navigation bar to one line
-	******************************/
-	nav ul li a {
-		width: 25%;
-		float: left;
-		line-height: .5in;
-		font-size: 50%;
-	}
-	
-	nav {
-		height: .5in;
-		padding: 0 10%;
-		top: -.5in;
-	}
-	
-	#home {
-		top: -.33in;
-	}
-		
-	.footerhome {
-		top: -.33in;
-	}
-	
-	footer {
-		top: -.5in;
-	}
+
 }
 
-
+@media screen and (min-width: 680px) and (min-device-width: 680px) {
+	.summary .summarytext h1 {
+		font-size: 100%;
+	}
+	
+	.summary .summarytext p  {
+		font-size: 75%;
+	}
+}
 
 /******************************
 	Intended for small devices (phones)
@@ -232,13 +200,9 @@ and (max-device-width: 480px) {
 	}
 	
 	.summary {
-		display: block;
-		height: auto;
-		position: relative;
 		background-color: #ff6666;
 		padding: .25in;
-		padding-bottom: 0;
-		min-height: 2.25in;
+		min-height: 2.5in;
 	}
 	
 	.summary .image {
@@ -255,37 +219,22 @@ and (max-device-width: 480px) {
 	}
 	
 	.summary .summarytext {
-		display: block;
-		position: relative;
-		text-align: left;
-		min-height: 2in;
 		margin: 0;
 		margin-left: 2.25in;
 		padding: 0 0 .25in 0;
-		top:-.165in;
-		width-max: 8in;
+		max-width: 8in;
 		float: none;
 		clear: none;
 	}
 	
 	.summary .summarytext h1 {
 		font-size: 125%;
-		font-weight: bold;
-		text-align: left;
-		color: white;
-		position: relative;
-		top: 0;
-		line-height: 1;
 	}
 	
 	.summary .summarytext p  {
-		top: -.1in;
 		line-height: 1.25;
 		position: relative;
 		font-size: 100%;
-		text-align: left;
-		margin: 0;
-		padding: 0;
 	}
 	
 	.text {
@@ -294,18 +243,15 @@ and (max-device-width: 480px) {
 		clear: both;
 		background-color: whitesmoke;
 		width: 100%;
-		margins: 0;
 		height: 192px;
 	}
 	
 	.text p {
 		color: #474747;
 		font-size: 75%;
-		top: 0;
 	}
 	
 	.section {
-		display: inline-block;
 		min-width: 3in;
 		position: relative;
 		float: left;
@@ -317,21 +263,12 @@ and (max-device-width: 480px) {
 	}
 	
 	.title {
-		display: block;
-		position: relative;
-		top: -.165in;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 	
 	.title p {
-		color: #474747;
 		font-size: 125%;
-		font-weight: bold;
-		text-align: left;
-		position: relative;
-		line-height: 1;
-		text-transform: uppercase;
 	}
 	
 	.item {
@@ -365,7 +302,7 @@ and (max-device-width: 480px) {
 	
 	.fact {
 		margin: 2.5%;
-		width: 90%;
+		width: 95%;
 	}
 	
 	.fact h {
@@ -452,50 +389,6 @@ and (max-device-width: 480px) {
 		width: calc(100% - 2in);
 	}
 	
-	
-	
-	/******************************
-		Changing navigation bar to one line
-	******************************/
-	nav ul li a {
-		width: 25%;
-		float: left;
-		line-height: 1in;
-		font-size: 100%;
-	}
-	
-	nav {
-		height: 1in;
-		padding: 0 10%;
-		top: -.5in;
-	}
-	
-	#home {
-		top: -.33in;
-	}
-		
-	.footerhome {
-		top: -.33in;
-	}
-	
-	footer {
-		top: -.5in;
-	}
-	
-	footer h {
-		line-height: 1in;
-	}
-}
-
-
-@media screen and (min-width: 660px) {
-	nav {
-		top: -.7in;
-	}
-	
-	footer {
-		top: -.7in;
-	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -513,7 +406,7 @@ and (max-device-width: 480px) {
 	}
 	
 	.summary {
-		height: 3in;
+		min-height: 4in;
 	}
 	
 	.summary .image {
@@ -527,7 +420,7 @@ and (max-device-width: 480px) {
 	}
 	
 	.summary {
-		padding: 5%;
+		padding: .5in;
 	}
 	
 	section {
@@ -672,28 +565,7 @@ and (max-device-width: 480px) {
 		float: left;
 	}
 	
-	/******************************
-		Footer
-	******************************/
-	
-	nav {
-		font-size: 160%;
-		height: 1in;
-		line-height: 1in;
-		top: -1in;
-	}
-	
-	nav ul {
-		top: .25in;
-	}
-	
-	footer {
-		height: 1in;
-		top: -1in;
-	}
-	
 	footer h {
-		line-height: 1.5in;
 		font-size: 26px;
 	}
 }
@@ -704,7 +576,6 @@ and (max-device-width: 480px) {
 	}
 	
 	footer h {
-		top: -.25in;
 		font-size: 28px;
 	}
 }

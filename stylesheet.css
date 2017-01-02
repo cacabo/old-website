@@ -19,6 +19,11 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 	width: 100%;
+	vertical-align: top;
+}
+
+.whitesmoke {
+	background-color: whitesmoke;
 }
 
 img {
@@ -69,7 +74,7 @@ a {
 	height: .75in;
 	font-size: 150%;
 	padding: 0;
-	margins: 0;
+	margin: 0;
 	z-index: 2;
 	background-color: white;
 	text-align: center;
@@ -88,7 +93,7 @@ a {
 
 .top h {
 	color: black;
-	weight: bold;
+	font-weight: bold;
 	z-index: 2;
 	line-height: .75in;
 }
@@ -99,14 +104,11 @@ a {
 .container {
   	display: block;
 	position: relative;
-	top: -0px;
 	vertical-align: top;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 0px;
-  	margin-top: 0px;
-	padding-bottom: 0px;
-  	margin-bottom: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 /******************************
@@ -114,20 +116,23 @@ a {
 ******************************/
 section {
 	background-color: whitesmoke;
-	display: inline-block;
+	display: block;
+	height: auto;
+	overflow-y: auto;
 	position: relative;
-	top: -.165in;
 	width: 100%;
 	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 .summary {
 	display: block;
 	height: auto;
+	overflow-y: visible;
 	position: relative;
 	padding: .25in;
-	padding-bottom: 0;
-	min-height: 2.25in;
+	min-height: 2.5in;
+	margin: 0;
 }
 
 #peach {
@@ -147,12 +152,13 @@ section {
 	height: auto;
 	width: 100%;
 	background-color: white;
-	margin: 0 0 .25in 0;
 }
 
 .summary .image img {
+	display: block;
 	width: 100%;
-	height: auto;
+	height: 2in;
+	position: relative;
 }
 
 .summary .summarytext {
@@ -161,8 +167,7 @@ section {
 	text-align: left;
 	margin: 0;
 	padding: 0 0 .165in;
-	top: 0;
-	width-max: 8in;
+	max-width: 8in;
 }
 
 .summary .summarytext h1 {
@@ -171,12 +176,12 @@ section {
 	text-align: left;
 	color: white;
 	position: relative;
-	top: 0;
+	margin-top: 0;
 	line-height: 100%;
 }
 
 .summary .summarytext p  {
-	top: -.05in;
+	top: .05in;
 	line-height: 1.5;
 	position: relative;
 	font-size: 50%;
@@ -189,7 +194,7 @@ section {
 	clear: both;
 	background-color: whitesmoke;
 	width: 100%;
-	margins: 0;
+	margin: 0;
 	padding: 5% 0;
 }
 
@@ -201,9 +206,9 @@ section {
 }
 
 .section {
-	display: inline-block;
+	display: block;
 	position: relative;
-	margin: 0 10% 0;
+	padding: 0 10% 0;
 	white-space: nowrap;
 	background-color: whitesmoke;
 }
@@ -232,7 +237,7 @@ section {
 .item {
 	display: block;
 	position: relative;
-	top: -.165in;
+	/*top: -.165in;*/
 	color: #474747;
 	font-size: 50%;
 	line-height: 1.5;
@@ -256,9 +261,9 @@ section {
 ******************************/
 
 #full-width {
-	width: 95%;
+	width: 100%;
 	padding: 2.5%;
-	margin: 0;
+	margin: 0 !important;
 }
 
 /*Elements in the resume portion of the about section*/
@@ -282,10 +287,10 @@ section {
 
 .fact {
 	display: inline-block;
-	width: 95%;
+	width: 100%;
 	position: relative;
 	clear: both;
-	margin: .125in 0;
+	margin: 2.5% 0;
 	background-color: white;
 	padding: 2.5%;
     box-shadow: 2px 6px 20px #BBBBBB;
@@ -492,7 +497,7 @@ section {
     line-height: .5in;
     font-size: .25in;
 	text-align: center;
-    background-color: #888888;
+    background-color: #AAA;
     color: whitesmoke;
 	border-radius: 100%;
 }
@@ -503,7 +508,7 @@ section {
 	height: auto;
 	background-color: whitesmoke;
 	text-align: center;
-    color: #474747;
+    color: #AAA;
 	margin-right: 2.5%;
 }
 
@@ -521,6 +526,10 @@ section {
 
 .fa-instagram:hover {
 	background-color: #e95950;
+}
+
+.fa-github:hover {
+	background-color: #444;
 }
 
 img:hover {
@@ -551,10 +560,6 @@ img:hover {
 	text-decoration: underline;
 }
 
-nav ul a:hover {
-	text-decoration: underline;
-}
-
 a:hover {
 	text-decoration: underline;
 }
@@ -565,59 +570,21 @@ a:hover {
     FOOTER
 ******************************/
 
-
-nav {
-	display: block;
-	background-color: lightgray;
-	color: #474747;
-	line-height: 1.25;
-	position: relative;
-	padding: .05in;
-	top: -.165in;
-}
-
-nav ul {
-	list-style: none;
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 100%;
-	padding-left: 0;
-	width: 100%;
-}
-
-nav ul a {
-	text-decoration: none;
-	color: #474747;
-}
-
-nav ul li #selected {
-	color: white;
-}
-
 footer {
 	display: block;
 	position: relative;
 	background-color: white;
-	clear: both;
 	width: 100%;
-	height: 48px;
-	border-color: gray;
+	height: auto;
+	overflow-y: visible;
+	border-color: #D8D8D8;
 	border-style: solid;
 	border-width: 1px 0 0 0;
 	text-align: center;
-	top: -.165in;
+	padding: 2.5% 0;
 }
 
 footer h {
 	color: black;
-	line-height: 48px;
 	font-size: 18px;
 }
-
-.footerhome {
-	top: 0;
-	z-index: 3;
-}
-
-/*homepage only*/

@@ -1,0 +1,120 @@
+html {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+button.navbar-toggle {
+	margin: 0;
+}
+
+div.container-fluid {
+}
+
+div.navbar-header {
+	padding: 18px;
+}
+
+div.navbar.navbar-default.navbar-fixed-top {
+	height: auto;
+}
+
+nav.navbar.navbar-default {
+	margin: 0;
+	background-color: white;
+	width: 100%;
+	z-index: 1;
+}
+
+a.navbar-brand {
+	height: auto;
+	padding: 0;
+}
+
+a.navbar-brand h1 {
+	color: black;
+	letter-spacing: 6px;
+	line-height: 0%;
+	font-size: 28px;
+}
+
+
+.navbar-header {
+    float: none;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.navbar-collapse.collapse {
+    display: none !important;
+}
+
+.navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+}
+
+.navbar-collapse {
+	overflow-x: hidden !important;
+}
+
+.navbar-nav>li {
+    float: none;
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 75%;
+}
+
+.navbar-nav>li>a:hover {
+    background-color: whitesmoke !important;
+}
+
+.navbar-collapse.collapse.in {
+	display: block !important;
+}
+
+@media only screen and (max-width: 546px) {
+	a.navbar-brand h1 {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 398px) {
+	a.navbar-brand h1 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 332px) {
+	a.navbar-brand h1 {
+		font-size: 12px;
+	}
+}
+
+.spacer {
+	background-color: white;
+	width: 100%;
+	height: 69.6px;
+}
