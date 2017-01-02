@@ -20,7 +20,10 @@ button.navbar-toggle {
 	margin: 0;
 }
 
-div.container-fluid {
+div.container-fluid.head {
+	border-color: #D8D8D8;
+	border-style: solid;
+	border-width: 0 0 .5px 0;
 }
 
 div.navbar-header {
