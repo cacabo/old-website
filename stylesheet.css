@@ -114,7 +114,7 @@ a {
 	position: absolute;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 500%;
+	font-size: 16.66665vw;
 	top: 0;
 	z-index: 0;
 	color: white;
@@ -175,7 +175,7 @@ section {
 .summary .image img {
 	display: block;
 	width: 100%;
-	height: 2in;
+	height: 100%;
 	position: relative;
 }
 
@@ -252,6 +252,26 @@ section {
 	text-transform: uppercase;
 }
 
+.icons {
+	display: block;
+	position: relative;
+	color: #474747;
+	font-size: 50%;
+	line-height: 1.5;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.icons i {
+	margin: 2.5% 2.5% 0 2.5%;
+	background-color: #ce5252;
+	color: #ff6666;
+}
+
+#left {
+	margin-left: 0;
+}
+
 .item {
 	display: block;
 	position: relative;
@@ -271,7 +291,86 @@ section {
 	text-decoration: none;
 }
 
+.contact h3 {
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 100%;
+	display: block;
+}
 
+p i.fa {
+	font-size: 75%;
+	border: none;
+	background-color: transparent;
+	height: auto;
+	width: auto;
+	line-height: 100%;
+	color: gray;
+}
+
+p i.fa:hover {
+	color: gray;
+}
+
+.row {
+	width: 100%;
+}
+
+.contact p {
+	font-size: 62.5%;
+	display: block;
+	color: gray;
+	text-align: center;
+}
+
+.contact a:hover {
+	text-decoration: none;
+}
+
+.contact a:hover i {
+	color: #474747;
+}
+
+.contact a:hover p {
+	color: #474747;
+}
+
+.input-group {
+	margin-bottom: 2.5%;
+}
+
+.contact-wrapper-wrapper {
+	padding: 5%;
+	margin: 0;
+}
+
+.contact-wrapper {
+	padding: 2.5%;
+	position: relative;
+	background-color: white;
+	box-shadow: 2px 6px 20px #BBBBBB;
+}
+
+.form-group {
+}
+
+label {
+	font-size: 62.5%;
+	width: 20%;
+	text-align: right;
+	vertical-align: top;
+	color: #474747;
+}
+
+input, textarea {
+	width: 75% !important;
+	float: right !important;
+}
+
+input#submit {
+	width: 20% !important;
+	margin: 0 40% !important;
+}
 
 /******************************
     ABOUT
@@ -533,6 +632,10 @@ section {
 	margin-left: 10%;
 }
 
+.fa:hover {
+	color: white;
+}
+
 .fa-linkedin:hover {
 	background-color: #0077B5;
 }
@@ -542,7 +645,7 @@ section {
 }
 
 .fa-instagram:hover {
-	background-color: #e95950;
+	background-color: #8a3ab9;
 }
 
 .fa-github:hover {
