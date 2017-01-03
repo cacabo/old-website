@@ -566,7 +566,7 @@ and (max-device-width: 480px) {
 	}
 	
 	footer h {
-		font-size: 26px;
+		font-size: 18px;
 	}
 }
 
@@ -576,6 +576,6 @@ and (max-device-width: 480px) {
 	}
 	
 	footer h {
-		font-size: 28px;
+		font-size: 20px;
 	}
 }
