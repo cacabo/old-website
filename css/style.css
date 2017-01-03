@@ -14,10 +14,11 @@ button.navbar-toggle {
 	margin: 0;
 }
 
-div.container-fluid.head {
+div.container.head {
 	border-color: #D8D8D8;
 	border-style: solid;
 	border-width: 0 0 .5px 0;
+	padding: 0 1.25%;
 }
 
 div.navbar-header {
@@ -26,9 +27,14 @@ div.navbar-header {
 	background-color: transparent;
 }
 
-nav#top.navbar.navbar-default.navbar-fixed-top {
+nav.navbar.navbar-default.navbar-fixed-top {
 	height: auto;
 	background-color: white;
+	position: fixed !important;
+	top: 0px;
+	left: 0px;
+	-webkit-backface-visibility: hidden;
+	width: 100%;
 }
 
 nav {
@@ -37,7 +43,6 @@ nav {
 
 nav.navbar.navbar-default {
 	margin: 0;
-	background-color: white;
 	width: 100%;
 }
 
@@ -63,7 +68,6 @@ a.navbar-brand h1 {
 }
 
 .navbar-collapse {
-    border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
