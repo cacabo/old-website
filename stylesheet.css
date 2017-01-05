@@ -37,6 +37,7 @@ p {
 	color: white;
 	font-size: 550%;
 	width: 100%;
+	font-weight: normal;
 }
 
 h {
@@ -45,6 +46,7 @@ h {
 	color: #606060;
 	top: 12px;
 	width: 100%;
+	font-weight: normal;
 }
 
 h1 {
@@ -362,7 +364,7 @@ p i.fa:hover {
 	padding: 2.5%;
 	position: relative;
 	background-color: white;
-	box-shadow: 2px 6px 20px #BBBBBB;
+	box-shadow: 2px 6px 12px #BBBBBB;
 }
 
 .form-group {
@@ -417,16 +419,15 @@ input#submit {
 
 .fact {
 	background-color: white;
+	display: inline-block;
+	width: 95%;
 	padding: 2.5%;
-    box-shadow: 2px 6px 20px #BBBBBB;
+    box-shadow: 2px 6px 12px #BBBBBB;
+    margin: 2.5%;
 }
 
 .fact-wrapper {
 	padding: 2.5%;
-}
-
-.fact-wrapper:nth-child(2n) {
-	clear: right;
 }
 
 .resume-image {
@@ -439,48 +440,39 @@ input#submit {
 	clear: none;
 }
 
-.fact h {
-	font-weight: bold;
-	font-size: 50%;
-	text-align: left;
-	float: left;
-	width: auto;
-	clear: right;
-	line-height: 1.25;
-}
-
 .fact h1 {
 	font-size: 50%;
-	font-style: italic;
 	text-align: left;
 	width: auto;
-	clear: right;
 	line-height: 1.25;
+	margin: 0;
 }
 
 .fact p {
+	position: relative;
 	text-align: left;
+	font-weight: normal;
 	font-size: 50%;
 	color: #474747;
 	margin: 0;
 	padding: 0;
 	line-height: 1.25;
-	clear: both;
+	float: none;
+	clear: none;
 }
 
 .title3 {
 	display: inline-block;
 	position: relative;
-	padding-bottom: 2.5%;
-	float: left;
-	clear: right;
+	vertical-align: top;
+	padding-bottom: .125in;
 }
 
 .resume {
-	margin: 5% calc(50% - 1.75in);
-	width: auto;
+	margin: 5% 0;
+	text-align: center;
+	width: 100%;
 	display: inline-block;
-	min-width: 3.5in;
 }
 
 .resume p {
@@ -526,7 +518,7 @@ input#submit {
 	width: 45%;
 	float: left;
 	height: auto;
-	box-shadow: 2px 6px 20px #BBBBBB;
+	box-shadow: 2px 6px 12px #BBBBBB;
 }
 
 .gallery:nth-child(2n) {
@@ -571,17 +563,17 @@ input#submit {
 .design {
 	background-color: white;
 	padding: 5%;
-    box-shadow: 2px 6px 20px #BBBBBB;
+    box-shadow: 2px 6px 12px #BBBBBB;
     min-height: calc(1.5in + 10%);
     margin: 2.5%;
     display: inline-block;
 }
 
-.design-wrapper {
+.wrapper {
 	display: block;
 }
 
-.fact-wrapper-wrapper {
+.column-wrapper, .column-wrapper.thin {
     line-height: 0;
     -webkit-column-count: 2;
     -webkit-column-gap:   0px;
@@ -592,11 +584,29 @@ input#submit {
 }
 
 @media (max-width: 1200px) {
-	.fact-wrapper-wrapper {
+	.column-wrapper {
 	    -moz-column-count:    1;
 	    -webkit-column-count: 1;
 	    column-count:         1;
   	}
+
+  	.fact.thin {
+  		padding: 5%;
+  	}
+}
+
+@media (max-width: 800px) {
+	.column-wrapper.thin {
+		-moz-column-count:    1;
+	    -webkit-column-count: 1;
+	    column-count:         1;
+	}
+}
+
+@media (min-width: 1200px) {
+	.fact {
+		padding: 5%;
+	}
 }
 
 .design-image {
@@ -608,19 +618,8 @@ input#submit {
 	clear: none;
 }
 
-.design h {
-	font-weight: bold;
-	font-size: 50%;
-	text-align: left;
-	/*float: left;*/
-	width: auto;
-	/*clear: right;*/
-	line-height: 1.25;
-}
-
 .design h1 {
 	font-size: 50%;
-	font-style: italic;
 	text-align: left;
 	width: auto;
 	line-height: 1.25;
@@ -666,12 +665,9 @@ input#submit {
 
 .resume .fa {
     font-size: 75%;
-	width: auto;
-	height: auto;
+    margin-right: 6px;
 	background-color: whitesmoke;
-	text-align: center;
-    color: #AAA;
-	margin-right: 2.5%;
+    color: gray;
 }
 
 .item i {

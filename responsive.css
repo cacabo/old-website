@@ -231,10 +231,6 @@ and (max-device-width: 480px) {
 		font-size: 100%;
 	}
 	
-	/******************************
-		Changing fact date & title to one line
-	******************************/
-	
 	.title3 {
 		font-size: 150%;
 	}
@@ -266,10 +262,6 @@ and (max-device-width: 480px) {
 		width: 1.25in;
 	}
 	
-	.title3 {
-		width: calc(100% - 1.5in);
-	}
-	
 	.resume .fa {
 		font-size: 100%;
 	}
@@ -278,19 +270,9 @@ and (max-device-width: 480px) {
 		font-size: 85%;
 	}
 	
-	/******************************
-		Changing design date & title to one line
-	******************************/
-	
 	.gallery p, .gallery h, .gallery h1{
 		font-size: 85%;
 	}
-	
-	
-	
-	/******************************
-		Changing design date & title to one line
-	******************************/
 	
 	.design h1 {
 		font-size: 100%;
@@ -392,18 +374,6 @@ and (max-device-width: 480px) {
 		font-size: 160%;
 	}
 	
-	/*.fact {
-		margin: 2.5% 0;
-		width: 45%;
-		float: left;
-		clear: none;
-	}*/
-	
-	.title3 {
-		width: auto;
-		top: -.165in;
-	}
-	
 	.fact h {
 		width: auto;
 		float: none;
@@ -414,19 +384,7 @@ and (max-device-width: 480px) {
 		width: auto;
 		float: left;
 		text-align: left;
-	}
-	
-	/*.fact:nth-child(2n) {
-		float: right;
-	}
-	
-	.fact:nth-child(2n+1) {
-		position: relative;
-		float: left;
-		margin-right: 5%;
-	}*/
-	
-	
+	}	
 	
 	
 	/******************************
