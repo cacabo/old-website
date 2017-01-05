@@ -191,7 +191,6 @@ and (max-device-width: 480px) {
 	}
 	
 	.section {
-		min-width: 3in;
 		position: relative;
 		float: left;
 		height: auto;
@@ -228,34 +227,19 @@ and (max-device-width: 480px) {
 	}
 	
 	.title2 {
-		font-size: 100%;
+		font-size: 125%;
 	}
 	
 	.title3 {
 		font-size: 150%;
 	}
 	
-	.fact h {
-		float: left;
-		font-size: 80%;
-		clear: none;
-		display: block;
-		position: relative;
-		width: 62.5%;
-	}
-	
 	.fact h1 {
-		float: right;
-		text-align: right;
-		font-size: 80%;
-		display: block;
-		position: relative;
-		width: 32.5%;
-		top: -.15in;
+		font-size: 100%;
 	}
 	
 	.fact p {
-		font-size: 80%;
+		font-size: 85%;
 	}
 	
 	.resume-image {
@@ -276,7 +260,6 @@ and (max-device-width: 480px) {
 	
 	.design h1 {
 		font-size: 100%;
-		width: 32.5%;
 	}
 	
 	.design p {

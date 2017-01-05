@@ -130,5 +130,16 @@ a.navbar-brand h1 {
 	Intended for small devices (phones)
 ******************************/
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 736px) {
+	a.navbar-brand h1 {
+		font-size: 72px;
+	}
+
+	div.navbar-header {
+		padding: 48px;
+	}
+
+	.spacer {
+		height: 130px;
+	}
 }
