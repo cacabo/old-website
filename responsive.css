@@ -106,67 +106,6 @@
 		line-height: 1;
 		text-transform: uppercase;
 	}
-	
-	/******************************
-		Changing fact date & title to one line
-	******************************/
-	
-	.fact {
-		margin: 2.5%;
-		width: 95%;
-	}
-	
-	.fact h {
-		float: left;
-		font-size: 60%;
-		clear: none;
-		display: block;
-		position: relative;
-		width: 62.5%;
-	}
-	
-	.fact h1 {
-		float: right;
-		text-align: right;
-		font-size: 60%;
-		display: block;
-		position: relative;
-		width: 32.5%;
-		top: -.05in;
-	}
-	
-	.title3 {
-		width: calc(100% - 1.25in);
-	}
-	
-	
-	/******************************
-		Changing design date & title to one line
-	******************************/
-	
-	.design h {
-		float: left;
-		font-size: 60%;
-		clear: none;
-		display: block;
-		position: relative;
-		width: 62.5%;
-	}
-	
-	.design h1 {
-		float: right;
-		text-align: right;
-		font-size: 60%;
-		display: block;
-		position: relative;
-		width: 32.5%;
-		top: -.05in;
-	}
-	
-	.designtitle {
-		width: calc(100% - 1.75in);
-	}
-
 }
 
 @media screen and (min-width: 680px) and (min-device-width: 680px) {
@@ -300,11 +239,6 @@ and (max-device-width: 480px) {
 		font-size: 150%;
 	}
 	
-	.fact {
-		margin: 2.5%;
-		width: 95%;
-	}
-	
 	.fact h {
 		float: left;
 		font-size: 80%;
@@ -358,23 +292,9 @@ and (max-device-width: 480px) {
 		Changing design date & title to one line
 	******************************/
 	
-	.design h {
-		float: left;
-		font-size: 100%;
-		clear: none;
-		display: block;
-		position: relative;
-		width: 62.5%;
-	}
-	
 	.design h1 {
-		float: right;
-		text-align: right;
 		font-size: 100%;
-		display: block;
-		position: relative;
 		width: 32.5%;
-		top: -.05in;
 	}
 	
 	.design p {
@@ -382,7 +302,11 @@ and (max-device-width: 480px) {
 	}
 	
 	.design-image {
-		width: 1.75in;
+		height: 1.75in;
+	}
+
+	.design {
+		min-height: calc(1.75in + 10%);
 	}
 	
 	.designtitle {
@@ -468,12 +392,12 @@ and (max-device-width: 480px) {
 		font-size: 160%;
 	}
 	
-	.fact {
+	/*.fact {
 		margin: 2.5% 0;
 		width: 45%;
 		float: left;
 		clear: none;
-	}
+	}*/
 	
 	.title3 {
 		width: auto;
@@ -492,7 +416,7 @@ and (max-device-width: 480px) {
 		text-align: left;
 	}
 	
-	.fact:nth-child(2n) {
+	/*.fact:nth-child(2n) {
 		float: right;
 	}
 	
@@ -500,7 +424,7 @@ and (max-device-width: 480px) {
 		position: relative;
 		float: left;
 		margin-right: 5%;
-	}
+	}*/
 	
 	
 	
@@ -515,43 +439,17 @@ and (max-device-width: 480px) {
 		font-size: 175%;
 	}
 	
-	.design {
-		margin: 2.5% 0;
-		width: 42.5%;
-		float: left;
-		clear: none;
-		padding: 2.5%;
-	}
-	
 	.designtitle {
 		width: auto;
 		top: -.165in;
 	}
 	
-	.design h {
-		width: auto;
-		float: none;
-		clear: right;
-	}
-	
-	.design h1 {
-		width: auto;
-		float: left;
-		text-align: left;
-	}
-	
 	.design-image {
-		width: 2in;
+		height: 2in;
 	}
-	
-	.design:nth-child(2n) {
-		float: left;
-		margin-right: 5%;
-	}
-	
-	.design:nth-child(2n+1) {
-		float: right;
-		clear: right;
+
+	.design {
+		min-height: 3in;
 	}
 	
 	

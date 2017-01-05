@@ -60,6 +60,12 @@ a {
 	text-decoration: none;
 }
 
+.space {
+	height: 10vh;
+	display: block;
+	background-color: transparent;
+}
+
 /******************************
     HEADER
 ******************************/
@@ -410,14 +416,17 @@ input#submit {
 }
 
 .fact {
-	display: inline-block;
-	width: 100%;
-	position: relative;
-	clear: both;
-	margin: 2.5% 0;
 	background-color: white;
 	padding: 2.5%;
     box-shadow: 2px 6px 20px #BBBBBB;
+}
+
+.fact-wrapper {
+	padding: 2.5%;
+}
+
+.fact-wrapper:nth-child(2n) {
+	clear: right;
 }
 
 .resume-image {
@@ -560,22 +569,41 @@ input#submit {
 ******************************/
 
 .design {
-	display: inline-block;
-	width: 85%;
-	position: relative;
-	clear: both;
-	margin: 2.5%;
 	background-color: white;
 	padding: 5%;
     box-shadow: 2px 6px 20px #BBBBBB;
+    min-height: calc(1.5in + 10%);
+    margin: 2.5%;
+    display: inline-block;
+}
+
+.design-wrapper {
+	display: block;
+}
+
+.fact-wrapper-wrapper {
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    2;
+    -moz-column-gap:      0px;
+    column-count:         2;
+    column-gap:           0px;
+}
+
+@media (max-width: 1200px) {
+	.fact-wrapper-wrapper {
+	    -moz-column-count:    1;
+	    -webkit-column-count: 1;
+	    column-count:         1;
+  	}
 }
 
 .design-image {
-	display: inline-block; 
 	position: relative;
-	width: 1.5in;
+	width: auto;
+	height: 1.5in;
 	margin: 0 .25in .25in 0;
-	height: auto;
 	float: left;
 	clear: none;
 }
@@ -584,9 +612,9 @@ input#submit {
 	font-weight: bold;
 	font-size: 50%;
 	text-align: left;
-	float: left;
+	/*float: left;*/
 	width: auto;
-	clear: right;
+	/*clear: right;*/
 	line-height: 1.25;
 }
 
@@ -614,12 +642,6 @@ input#submit {
 	display: inline-block;
 	position: relative;
 	padding-bottom: 2.5%;
-	float: none;
-	clear: right;
-}
-
-#last {
-	margin-bottom: 10%;
 }
 
 
