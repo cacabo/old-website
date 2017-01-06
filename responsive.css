@@ -213,7 +213,7 @@ and (max-device-width: 480px) {
 		font-size: 85%;
 	}
 	
-	.fa {
+	.social {
 		width: 1in;
 		height: 1in;
 		line-height: 1in;
@@ -340,7 +340,7 @@ and (max-device-width: 480px) {
 		font-size: 160%;
 	}
 	
-	.fa {
+	.social {
 		height: .75in;
 		width: .75in;
 		line-height: .75in;
