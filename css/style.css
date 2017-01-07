@@ -175,13 +175,10 @@ a.navbar-brand h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 736px) {
 	a.navbar-brand h1 {
 		font-size: 72px;
-	}
-
-	div.navbar-header {
-		padding: 48px;
+		line-height: 120px;
 	}
 
 	.spacer {
-		height: 130px;
+		height: 120px;
 	}
 }

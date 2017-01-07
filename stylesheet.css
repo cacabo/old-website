@@ -106,6 +106,26 @@ a {
 	line-height: .75in;
 }
 
+.back-to-top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 12px;
+	z-index: 5;
+	color: gray;
+}
+
+.back-to-top i {
+	color: gray;
+	font-size: 72px;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.back-to-top i:hover {
+	color: #474747;
+}
+
 /******************************
     HOME
 ******************************/
@@ -429,6 +449,20 @@ input#submit {
 	margin: .125in 0;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.title2 h3 {
+	text-align: center;
+	line-height: 1;
+}
+
+.title2 h3 a {
+	color: gray;
+}
+
+.title2 h3 a:hover {
+	text-decoration: none;
+	color: #474747;
 }
 
 .fact {

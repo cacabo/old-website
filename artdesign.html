@@ -14,6 +14,8 @@
         
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,700i" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 		<link href="css/bootstrap.min.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
         <link type="text/css" rel="stylesheet" href="responsive.css"/>
@@ -40,9 +42,7 @@
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="fa fa-bars nav-icon"></i>
               </button>
               <a class="navbar-brand" href="index.html"><h1>CAMERON&nbsp;&nbsp;E.&nbsp;&nbsp;CABO</h1></a>
             </div>
@@ -60,7 +60,11 @@
           </div><!-- /.container-fluid -->
         </nav>
 
-        <div class="spacer"></div>
+        <span id="top"><div class="spacer"></div></span>
+
+        <div class="back-to-top">
+            <a data-scroll href="#top"><i class="fa fa-angle-double-up"></i></a>
+        </div>
 
 <!--
 	Summary
@@ -83,6 +87,7 @@
         <section id="full-width">
         	<div class="title2">
         		<p>Fine Art</p>
+                <h3><a data-scroll href="#design">...or skip to design</a></h3>
        	    </div>
             <section id="pictures">
             <div class="column">
@@ -210,17 +215,21 @@
                     </div>
                     </div>
   				<div class="gallery">
-                        <a href="Images/Gallery/6.JPG" target="_blank"><img src="Images/Gallery/6.JPG" alt="" class="gallery-image"></a>
-                        <div class="title4">
-                            <h>Self-Portrait: Pain</h>
-                            <h1>2016</h1>
-                            <p>Charcoal on canvas.</p>
-                        </div>
-                    </div> 
-             </div>
-             </section>
-                <div class="title2">
-                    <p>Design</p>
+                    <a href="Images/Gallery/6.JPG" target="_blank"><img src="Images/Gallery/6.JPG" alt="" class="gallery-image"></a>
+                    <div class="title4">
+                        <h>Self-Portrait: Pain</h>
+                        <h1>2016</h1>
+                        <p>Charcoal on canvas.</p>
+                    </div>
+                </div> 
+            </div>
+            </section>
+
+            <div class="space">
+                <span id="design"></span>
+            </div>
+            <div class="title2">
+                <p>Design</p>
             </div>
             <div class="column-wrapper">
                 <div class="wrapper">
@@ -315,6 +324,10 @@
 			<h>&copy Cameron Cabo 2016, All Rights Reserved.</h>
 		</footer>
 
+        <script src="js/smooth-scroll.min.js"></script>
+        <script>
+            smoothScroll.init();
+        </script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
