@@ -808,7 +808,28 @@ a:hover {
 ******************************/
 
 .thanks-wrapper {
-	height: calc(100vh - );
+	padding: 10% 15%;
+}
+
+.thanks-text h1 {
+	font-weight: bold;
+	font-size: 150%;
+	color: white;
+}
+
+.thanks-text p {
+	font-size: 100%;
+	color: white;
+}
+
+.thanks-text p a {
+	font-weight: bold;
+	color: white;
+}
+
+.thanks-text p a:hover {
+	text-decoration: underline;
+	color: white;
 }
 
 .fixed-bottom {
@@ -816,6 +837,16 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	z-index: 5 !important;
+}
+
+.transparent {
+	background: transparent;
+	color: white;
+	border-color: transparent;
+}
+
+.transparent h {
+	color: white;
 }
 
 /******************************
