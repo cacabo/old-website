@@ -68,6 +68,10 @@ a {
 	background-color: transparent;
 }
 
+.tall {
+	height: 40vh;
+}
+
 /******************************
     HEADER
 ******************************/
@@ -799,7 +803,29 @@ a:hover {
 	text-decoration: underline;
 }
 
+/******************************
+    THANKS
+******************************/
 
+.thanks-wrapper {
+	height: calc(100vh - );
+}
+
+.fixed-bottom {
+	position: fixed !important;
+	right: 0;
+	bottom: 0;
+	z-index: 5 !important;
+}
+
+/******************************
+    ERROR
+******************************/
+
+.error {
+	padding-top: 10%;
+	height: 100vh !important; 
+}
 
 /******************************
     FOOTER
