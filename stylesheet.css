@@ -415,13 +415,10 @@ p i.fa:hover {
 }
 
 .contact-wrapper {
-	padding: 2.5%;
+	padding: 2.5% 5%;
 	position: relative;
 	background-color: white;
 	box-shadow: 2px 6px 12px #BBBBBB;
-}
-
-.form-group {
 }
 
 label {
@@ -847,6 +844,30 @@ a:hover {
 
 .transparent h {
 	color: white;
+}
+
+.background-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+@media only screen
+and (orientation : portrait) {
+	.background-image {
+		height: 100%;
+	}
+}
+
+@media only screen
+and (orientation : landscape) {
+	.background-image {
+		width: 100%;
+	}
 }
 
 /******************************
