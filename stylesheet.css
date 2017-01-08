@@ -115,15 +115,31 @@ a {
 	color: gray;
 }
 
+.back-to-top h3 span {
+	opacity: 0;
+	color: #474747;
+	transition: all .2s ease-in-out;
+}
+
 .back-to-top i {
 	color: gray;
 	font-size: 72px;
 	line-height: 0;
 	vertical-align: middle;
+	transition: all .2s ease-in-out;
 }
 
-.back-to-top i:hover {
+.back-to-top a:hover i {
 	color: #474747;
+	transform: scale(1.1);
+}
+
+.back-to-top a:hover {
+	text-decoration: none;
+}
+
+.back-to-top a:hover h3 span {
+	opacity: 1;
 }
 
 /******************************
@@ -507,6 +523,15 @@ input#submit {
 	line-height: 1.25;
 	float: none;
 	clear: none;
+}
+
+.fact p a {
+	font-weight: bold;
+}
+
+.fact p a:hover {
+	color: #474747;
+	text-decoration: underline;
 }
 
 .title3 {

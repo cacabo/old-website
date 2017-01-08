@@ -59,6 +59,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
 nav {
 	z-index: 5 !important;
+	-webkit-transform: translateZ(0) !important;
 }
 
 nav.navbar.navbar-default {
@@ -174,8 +175,13 @@ a.navbar-brand h1 {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 736px) {
 	a.navbar-brand h1 {
-		font-size: 72px;
+		font-size: 48px;
 		line-height: 120px;
+	}
+
+	.nav-icon {
+		line-height: 120px;
+		font-size: 88px;
 	}
 
 	.spacer {
