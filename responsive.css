@@ -107,13 +107,142 @@
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	
+	.summary {
+		min-height: 4in;
+	}
+	
+	.summary .image {
+		width: 3in;
+		height: 3in;
+	}
+
+	.image h1 {
+		line-height: 3in;
+	}
+	
+	.summary .image img {
+		width: 3in;
+		height: 3in;
+	}
+	
+	.summary {
+		padding: .5in;
+	}
+	
+	section {
+		padding: 5% 10% 5% 10%;
+	}
+	
+	.section {
+		padding-right: 10%;
+	}
+	
+	.summary .summarytext {
+		margin-left: 4in;
+	}
+	
+	.summary .summarytext h1 {
+		font-size: 160%;
+	}
+	
+	.summary .summarytext p {
+		font-size: 85%;
+	}
+	
+	.section .title p {
+		font-size: 135%;
+	}
+	
+	.item li {
+		font-size: 160%;
+	}
+	
+	.social {
+		height: .75in;
+		width: .75in;
+		line-height: .75in;
+		font-size: 250%;
+	}
+	
+	/******************************
+		Changing About section to 2 columns
+	******************************/
+	
+	.title2 {
+		width: 100%;
+		clear: both;
+		font-size: 160%;
+	}
+	
+	.fact h1 {
+		width: auto;
+		float: left;
+		text-align: left;
+	}	
+	
+	
+	/******************************
+		Changing Design section to 2 columns
+	******************************/
+	
+	.title2 {
+		width: 100%;
+		clear: both;
+		font-size: 175%;
+	}
+	
+	.designtitle {
+		width: auto;
+		top: -.165in;
+	}
+	
+	.design-image {
+		height: 2in;
+	}
+
+	.design {
+		min-height: 3in;
+	}
+	
+	
+	/******************************
+		Changing Art section to 4 columns
+	******************************/
+	
+	.column {
+		overflow: auto;
+		width: 50%;
+		float: left;
+	}
+	
+	footer h {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1204px) {
+	.resume-image {
+		width: 2in;
+	}
+	
+	footer h {
+		font-size: 20px;
+	}
+}
+
 /******************************
 	Intended for small devices (phones)
 ******************************/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)
-and (max-device-width: 480px) {
+and (max-device-width: 736px) {
 	
+	.no-display-mobile {
+		display: none !important;
+	}
+
 	.back-to-top h3 span {
 		display: none !important;
 	}
@@ -240,12 +369,56 @@ and (max-device-width: 480px) {
 	    line-height: .75in;
 	    font-size: .375in;
 	}
-	
+
+	/********************
+	  COMPUTER SCIENCE DISPLAY FOR MOBILE
+	********************/
+
+	.ss-wrapper-wrapper {
+		display: block;
+		margin: auto;
+	}
+
+	.ss-wrapper {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.ss-wrapper.mobile {
+		margin: auto;
+		display: block;
+		width: 50%;
+	}
+
+	.desktop-icons {
+		padding-top: 4px;
+	}
+
+	.mobile-ss-wrapper {
+		margin: auto;
+	}
+
+	#first.ss-wrapper {
+		padding-right: 0;
+		padding-bottom: 36px;
+	}
+
+	.fact.cs img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+		clear: right;
+		height: auto;
+	}
+
+	#minesweeper img {
+		height: auto !important;
+	}	
 }
 
 @media only screen
 and (-webkit-min-device-pixel-ratio: 2)
-and (max-device-width: 480px)
+and (max-device-width: 736px)
 and (orientation : portrait) {
 	.summary .image img {
 		width: 100%;
@@ -259,130 +432,5 @@ and (orientation : portrait) {
 		margin: 0;
 		padding: 0 0 .25in 0;
 		float: none;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	
-	.summary {
-		min-height: 4in;
-	}
-	
-	.summary .image {
-		width: 3in;
-		height: 3in;
-	}
-
-	.image h1 {
-		line-height: 3in;
-	}
-	
-	.summary .image img {
-		width: 3in;
-		height: 3in;
-	}
-	
-	.summary {
-		padding: .5in;
-	}
-	
-	section {
-		padding: 5% 10% 5% 10%;
-	}
-	
-	.section {
-		padding-right: 10%;
-	}
-	
-	.summary .summarytext {
-		margin-left: 4in;
-	}
-	
-	.summary .summarytext h1 {
-		font-size: 160%;
-	}
-	
-	.summary .summarytext p {
-		font-size: 85%;
-	}
-	
-	.section .title p {
-		font-size: 135%;
-	}
-	
-	.item li {
-		font-size: 160%;
-	}
-	
-	.social {
-		height: .75in;
-		width: .75in;
-		line-height: .75in;
-		font-size: 250%;
-	}
-	
-	/******************************
-		Changing About section to 2 columns
-	******************************/
-	
-	.title2 {
-		width: 100%;
-		clear: both;
-		font-size: 160%;
-	}
-	
-	.fact h1 {
-		width: auto;
-		float: left;
-		text-align: left;
-	}	
-	
-	
-	/******************************
-		Changing Design section to 2 columns
-	******************************/
-	
-	.title2 {
-		width: 100%;
-		clear: both;
-		font-size: 175%;
-	}
-	
-	.designtitle {
-		width: auto;
-		top: -.165in;
-	}
-	
-	.design-image {
-		height: 2in;
-	}
-
-	.design {
-		min-height: 3in;
-	}
-	
-	
-	/******************************
-		Changing Art section to 4 columns
-	******************************/
-	
-	.column {
-		overflow: auto;
-		width: 50%;
-		float: left;
-	}
-	
-	footer h {
-		font-size: 18px;
-	}
-}
-
-@media screen and (min-width: 1204px) {
-	.resume-image {
-		width: 2in;
-	}
-	
-	footer h {
-		font-size: 20px;
 	}
 }

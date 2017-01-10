@@ -754,33 +754,51 @@ input#submit {
 .ss-wrapper-wrapper {
 	display: table;
 	margin: auto;
+	display: inline-block;
 }
 
 .ss-wrapper {
 	display: table-cell;
 }
 
-.ss-wrapper#first {
+#first.ss-wrapper {
 	padding-right: 18px;
 }
 
 .fact.cs img {
 	height: 13.5vw;
 	width: auto;
-	display: block;
+}
+
+.fact.cs .ss-wrapper a {
+	display: inline-block;
 }
 
 #minesweeper img {
 	height: 22vw;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 748px) and (max-width: 1200px) {
 	.fact.cs img {
-		height: 30vw;
+		height: 29vw;
 	}
 
 	#minesweeper img {
-		height: 49vw;
+		height: 48vw;
+	}
+}
+
+@media (max-width: 748px) {
+	.fact.cs img {
+		height: 28vw;
+	}
+
+	#minesweeper img {
+		height: 46vw;
+	}
+
+	#first.ss-wrapper {
+		padding-right: 12px;
 	}
 }
 
@@ -790,8 +808,6 @@ input#submit {
 
 .desktop-ss-wrapper, .mobile-ss-wrapper {
 	background-color: lightgray;
-	width: auto;
-	height: auto;
 	display: inline-block;
 	float: left;
 	box-shadow: 2px 6px 12px #DDD;
