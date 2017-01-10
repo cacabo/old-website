@@ -72,6 +72,10 @@ a {
 	height: 40vh;
 }
 
+.strong {
+	font-weight: bold;
+}
+
 /******************************
     HEADER
 ******************************/
@@ -119,6 +123,10 @@ a {
 	color: gray;
 }
 
+.back-to-top a, .back-to-top a:hover, .back-to-top a:visited {
+	text-decoration: none;
+}
+
 .back-to-top h3 span {
 	opacity: 0;
 	color: #474747;
@@ -138,10 +146,6 @@ a {
 	transform: scale(1.1);
 }
 
-.back-to-top a:hover {
-	text-decoration: none;
-}
-
 .back-to-top a:hover h3 span {
 	opacity: 1;
 }
@@ -157,7 +161,7 @@ a {
 	padding: 0;
 }
 
-.container p {
+.container h2 {
 	line-height: 33.3333vw;
 	position: absolute;
 	text-transform: uppercase;
@@ -172,7 +176,7 @@ a {
 	padding: 0;
 }
 
-.container p:hover {
+.container h2:hover {
 	text-shadow: 0px 0px 32px black;
 }
 
@@ -236,6 +240,23 @@ section {
 	height: auto;
 	width: 100%;
 	background-color: white;
+}
+
+.no-background {
+	background: transparent !important;
+}
+
+.no-background img:hover {
+	opacity: 1;
+}
+
+.image h1 {
+	font-size: 750%;
+	text-align: center;
+	vertical-align:middle;
+	color: white;
+	padding: 0;
+	margin: 0;
 }
 
 .summary .image img {
@@ -513,7 +534,7 @@ input#submit {
 	margin: 0;
 }
 
-.fact p {
+.fact p, .fact li {
 	position: relative;
 	text-align: left;
 	font-weight: normal;
@@ -526,13 +547,22 @@ input#submit {
 	clear: none;
 }
 
-.fact p a {
+.fact li {
+	margin-bottom: 2.5%;
+}
+
+.fact p a, .fact li a {
 	font-weight: bold;
 }
 
-.fact p a:hover {
+.fact p a:hover, .fact li a:hover {
 	color: #474747;
 	text-decoration: underline;
+}
+
+.fact p a:visited, .fact li a:visited {
+	color: gray;
+	text-decoration: none;
 }
 
 .title3 {
@@ -663,7 +693,6 @@ input#submit {
 	    -webkit-column-count: 1;
 	    column-count:         1;
   	}
-
   	.fact.thin {
   		padding: 5%;
   	}
@@ -717,6 +746,149 @@ input#submit {
 	padding-bottom: 2.5%;
 }
 
+
+/******************************
+    COMPUTER SCIENCE
+******************************/
+
+.ss-wrapper-wrapper {
+	display: table;
+	margin: auto;
+}
+
+.ss-wrapper {
+	display: table-cell;
+}
+
+.ss-wrapper#first {
+	padding-right: 18px;
+}
+
+.fact.cs img {
+	height: 13.5vw;
+	width: auto;
+	display: block;
+}
+
+#minesweeper img {
+	height: 22vw;
+}
+
+@media (max-width: 1200px) {
+	.fact.cs img {
+		height: 30vw;
+	}
+
+	#minesweeper img {
+		height: 49vw;
+	}
+}
+
+.fact.cs img:hover {
+	opacity: 1;
+}
+
+.desktop-ss-wrapper, .mobile-ss-wrapper {
+	background-color: lightgray;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	float: left;
+	box-shadow: 2px 6px 12px #DDD;
+}
+
+.desktop-ss-wrapper {
+	padding: 4px;
+	padding-bottom: 14px;
+	border-radius: 2px;
+}
+
+.desktop-icons {
+	padding: 8px;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	float: right;
+	clear: right;
+}
+
+.desktop-icons .circle {
+	display: block;
+	background: gray;
+	border-radius: 100%;
+	width: 16px;
+	height: 16px;
+	margin-left: 8px;
+	float: left;
+}
+
+.desktop-icons .circle.first {
+	margin-left: 0;
+}
+
+.desktop-icons .circle:hover {
+	background: #474747;
+}
+
+.desktop-icons .circle.first:hover {
+	background: #61B54A;
+}
+
+.desktop-icons .circle.second:hover {
+	background: #F6DC54;
+}
+
+.desktop-icons .circle.third:hover {
+	background: #D1452E;
+}
+
+.mobile-ss-wrapper {
+	padding: 4px;
+	border-radius: 8px;
+}
+
+.mobile-icon-wrapper {
+	width: 100%;
+	text-align: center;
+	padding: 2px;
+}
+
+.camera {
+	height: 4px;
+	width: 4px;
+	margin: 0 auto;
+	background: gray;
+	border-radius: 100%;
+}
+
+.phone-line {
+	height: 2px;
+	width: 16px;
+	background: gray;
+	border-radius: 2px;
+	margin: 0 auto;
+	margin-bottom: 4px;
+}
+
+.home-btn {
+	margin: 0 auto;
+	margin-top: 4px;
+	height: 16px;
+	width: 16px;
+	border: 2px solid gray;
+	border-radius: 100%;
+	background: lightgray;
+}
+
+.mobile-icon-wrapper:hover .home-btn {
+	background: #B8B8B8;
+}
+
+.title3.cs {
+	margin-top: 24px;
+	float: none;
+	width: 100%;
+}
 
 /******************************
     ICONS, HOVERING, ETC.

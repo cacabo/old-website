@@ -21,6 +21,10 @@
 		float: left;
 		background-color: white;
 	}
+
+	.summary.image h1 {
+		line-height: 2in;
+	}
 	
 	.summary .image img {
 		width: auto;
@@ -186,7 +190,7 @@ and (max-device-width: 480px) {
 		font-size: 75%;
 	}
 	
-	.fact p {
+	.fact p, .fact li {
 		font-size: 70%;
 	}
 	
@@ -268,6 +272,10 @@ and (orientation : portrait) {
 		width: 3in;
 		height: 3in;
 	}
+
+	.image h1 {
+		line-height: 3in;
+	}
 	
 	.summary .image img {
 		width: 3in;
@@ -321,12 +329,6 @@ and (orientation : portrait) {
 		width: 100%;
 		clear: both;
 		font-size: 160%;
-	}
-	
-	.fact h {
-		width: auto;
-		float: none;
-		clear: right;
 	}
 	
 	.fact h1 {
