@@ -902,8 +902,40 @@ input#submit {
 
 .title3.cs {
 	margin-top: 24px;
-	float: none;
-	width: 100%;
+	display: inline-block;
+	clear: right;
+	display: table;
+}
+
+.empty-cell {
+	display: table-cell;
+	width: 2vw;
+}
+
+.cell-wrapper {
+	display: table-cell;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.fact .title3.cs h1 {
+	width: auto;
+	display: block;
+	font-size: 75%;
+}
+
+.fact .title3.cs h1 i {
+	width: auto;
+	display: block;
+	font-size: 70%;
+}
+
+.fa.fa-github.social.cs {
+	font-size: 48px;
+	line-height: 60px;
+	height: 60px;
+	width: 60px;
+	color: white;
 }
 
 /******************************
