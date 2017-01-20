@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*********************************************
 	Code by Cameron Cabo, all rights reserved
-	
+
 	STYLESHEET
 *********************************************/
 
@@ -518,7 +518,7 @@ input#submit {
 }
 
 .resume-image {
-	display: block; 
+	display: block;
 	position: relative;
 	width: 1in;
 	margin: 0 .25in .25in 0;
@@ -932,11 +932,17 @@ input#submit {
 }
 
 .fa.fa-github.social.cs {
-	font-size: 48px;
-	line-height: 60px;
-	height: 60px;
-	width: 60px;
-	color: white;
+	font-size: 56px;
+	line-height: 56px;
+	height: 56px;
+	width: 56px;
+	color: #CCC;
+  padding: 0;
+  background-color: transparent;
+}
+
+.fa.fa-github.social.cs:hover {
+  color: #333;
 }
 
 /******************************
@@ -1093,7 +1099,7 @@ and (orientation : landscape) {
 
 .error {
 	padding-top: 10%;
-	height: 100vh !important; 
+	height: 100vh !important;
 }
 
 /******************************
