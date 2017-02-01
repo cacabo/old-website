@@ -174,10 +174,6 @@ a {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	text-shadow: 0px 0px 0px transparent;
-}
-
-.container h2:hover {
 	text-shadow: 0px 0px 32px black;
 }
 
@@ -240,7 +236,6 @@ section {
 	display: block;
 	height: auto;
 	width: 100%;
-	background-color: white;
 }
 
 .no-background {
@@ -722,6 +717,12 @@ input#submit {
 	clear: none;
 }
 
+.long {
+	height: auto;
+	width: 100%;
+	margin-right: 0px;
+}
+
 .design h1 {
 	font-size: 50%;
 	text-align: left;
@@ -769,6 +770,11 @@ input#submit {
 .fact.cs img {
 	height: 13.5vw;
 	width: auto;
+}
+
+.fact.cs img.solo {
+	width: 100%;
+	height: auto;
 }
 
 .fact.cs .ss-wrapper a {
@@ -950,13 +956,13 @@ input#submit {
 ******************************/
 
 .social {
-    width: .5in;
-    height: .5in;
-    line-height: .5in;
-    font-size: .25in;
+  width: .5in;
+  height: .5in;
+  line-height: .5in;
+  font-size: .25in;
 	text-align: center;
-    background-color: #AAA;
-    color: whitesmoke;
+  background-color: #AAA;
+  color: whitesmoke;
 	border-radius: 100%;
 }
 
