@@ -1,9 +1,62 @@
 @charset "utf-8";
 /*********************************************
 	Code by Cameron Cabo, all rights reserved
-	
+
 	RESPONSIVE
 *********************************************/
+
+@media screen and (max-width: 480px) {
+	.no-display-mobile {
+		display: none !important;
+	}
+
+	/********************
+	  COMPUTER SCIENCE DISPLAY FOR MOBILE
+	********************/
+
+	.ss-wrapper-wrapper {
+		display: block;
+		margin: auto;
+	}
+
+	.ss-wrapper {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.ss-wrapper.mobile {
+		margin: auto;
+		display: block;
+		width: 50%;
+	}
+
+	.desktop-icons {
+		padding-top: 4px;
+	}
+
+	.mobile-ss-wrapper {
+		margin: auto;
+		margin-bottom: 5vh;
+	}
+
+	#first.ss-wrapper {
+		padding-right: 0;
+		padding-bottom: 36px;
+	}
+
+	.fact.cs img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+		clear: right;
+		height: auto;
+	}
+
+	#minesweeper img {
+		height: auto !important;
+	}
+
+}
 
 @media screen and (min-width: 480px) and (min-device-width: 480px) {
 	.summary {
@@ -13,7 +66,7 @@
 		background-color: #ff6666;
 		min-height: 2.5in;
 	}
-	
+
 	.summary .image {
 		display: block;
 		width: auto;
@@ -25,19 +78,19 @@
 	.summary.image h1 {
 		line-height: 2in;
 	}
-	
+
 	.summary .image img {
 		width: auto;
 		height: 2in;
 	}
-	
+
 	.summary .summarytext {
 		margin: 0;
 		margin-left: 2.25in;
 		padding: 0;
 		max-width: 8in;
 	}
-	
+
 	.summary .summarytext h1 {
 		font-size: 75%;
 		font-weight: bold;
@@ -46,14 +99,14 @@
 		position: relative;
 		line-height: 100%;
 	}
-	
+
 	.summary .summarytext p  {
 		line-height: 1.5;
 		position: relative;
 		font-size: 50%;
 		text-align: left;
 	}
-	
+
 	.text {
 		display: block;
 		position: relative;
@@ -63,12 +116,12 @@
 		margin: 0;
 		height: 192px;
 	}
-	
+
 	.text p {
 		color: #474747;
 		font-size: 50%;
 	}
-	
+
 	.section {
 		display: inline-block;
 		min-width: 3in;
@@ -80,12 +133,12 @@
 		white-space: nowrap;
 		background-color: whitesmoke;
 	}
-	
+
 	.title {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
-	
+
 	.title p {
 		color: #474747;
 		font-size: 100%;
@@ -101,18 +154,18 @@
 	.summary .summarytext h1 {
 		font-size: 100%;
 	}
-	
+
 	.summary .summarytext p  {
 		font-size: 75%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	
+
 	.summary {
 		min-height: 4in;
 	}
-	
+
 	.summary .image {
 		width: 3in;
 		height: 3in;
@@ -121,83 +174,83 @@
 	.image h1 {
 		line-height: 3in;
 	}
-	
+
 	.summary .image img {
 		width: 3in;
 		height: 3in;
 	}
-	
+
 	.summary {
 		padding: .5in;
 	}
-	
+
 	section {
 		padding: 5% 10% 5% 10%;
 	}
-	
+
 	.section {
 		padding-right: 10%;
 	}
-	
+
 	.summary .summarytext {
 		margin-left: 4in;
 	}
-	
+
 	.summary .summarytext h1 {
 		font-size: 160%;
 	}
-	
+
 	.summary .summarytext p {
 		font-size: 85%;
 	}
-	
+
 	.section .title p {
 		font-size: 135%;
 	}
-	
+
 	.item li {
 		font-size: 160%;
 	}
-	
+
 	.social {
 		height: .75in;
 		width: .75in;
 		line-height: .75in;
 		font-size: 250%;
 	}
-	
+
 	/******************************
 		Changing About section to 2 columns
 	******************************/
-	
+
 	.title2 {
 		width: 100%;
 		clear: both;
 		font-size: 160%;
 	}
-	
+
 	.fact h1 {
 		width: auto;
 		float: left;
 		text-align: left;
-	}	
-	
-	
+	}
+
+
 	/******************************
 		Changing Design section to 2 columns
 	******************************/
-	
+
 	.title2 {
 		width: 100%;
 		clear: both;
 		font-size: 175%;
 	}
-	
+
 	.designtitle {
 		width: auto;
 		top: -.165in;
 	}
-	
+
 	.design-image {
 		height: 2in;
 	}
@@ -205,18 +258,18 @@
 	.design {
 		min-height: 3in;
 	}
-	
-	
+
+
 	/******************************
 		Changing Art section to 4 columns
 	******************************/
-	
+
 	.column {
 		overflow: auto;
 		width: 50%;
 		float: left;
 	}
-	
+
 	footer h {
 		font-size: 18px;
 	}
@@ -226,7 +279,7 @@
 	.resume-image {
 		width: 2in;
 	}
-	
+
 	footer h {
 		font-size: 20px;
 	}
@@ -238,7 +291,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)
 and (max-device-width: 736px) {
-	
+
 	.no-display-mobile {
 		display: none !important;
 	}
@@ -246,13 +299,13 @@ and (max-device-width: 736px) {
 	.back-to-top h3 span {
 		display: none !important;
 	}
-	
+
 	.summary {
 		background-color: #ff6666;
 		padding: .25in;
 		min-height: 2.5in;
 	}
-	
+
 	.summary .image {
 		display: block;
 		width: auto;
@@ -260,26 +313,26 @@ and (max-device-width: 736px) {
 		float: left;
 		background-color: white;
 	}
-	
+
 	.summary .summarytext h1 {
 		font-size: 125%;
 	}
-	
+
 	.summary .summarytext p  {
 		line-height: 1.25;
 		position: relative;
 		font-size: 80%;
 	}
-	
+
 	.text {
 		width: 100%;
 		height: 192px;
 	}
-	
+
 	.text p {
 		font-size: 75%;
 	}
-	
+
 	.section {
 		position: relative;
 		float: left;
@@ -289,52 +342,52 @@ and (max-device-width: 736px) {
 		white-space: nowrap;
 		background-color: whitesmoke;
 	}
-	
+
 	.title {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
-	
+
 	.title p {
 		font-size: 125%;
 	}
-	
+
 	.item {
 		font-size: 85%;
 	}
-	
+
 	.section {
 		margin-right: 15%;
 	}
-	
+
 	.title2 {
 		font-size: 125%;
 	}
-	
+
 	.title3 {
 		font-size: 150%;
 	}
-	
+
 	.fact h1 {
 		font-size: 75%;
 	}
-	
+
 	.fact p, .fact li {
 		font-size: 70%;
 	}
-	
+
 	.resume-image {
 		width: 1.25in;
 	}
-	
+
 	.resume .fa {
 		font-size: 100%;
 	}
-	
+
 	.resume p {
 		font-size: 80%;
 	}
-	
+
 	.gallery h {
 		font-size: 70%;
 	}
@@ -342,16 +395,16 @@ and (max-device-width: 736px) {
 	.gallery p, .gallery h1 {
 		font-size: 65%;
 	}
-	
+
 	.design h1 {
 		font-size: 75%;
 		line-height: 1.25;
 	}
-	
+
 	.design p {
 		font-size: 70%;
 	}
-	
+
 	.design-image {
 		width: auto;
 		height: auto;
@@ -396,6 +449,7 @@ and (max-device-width: 736px) {
 
 	.mobile-ss-wrapper {
 		margin: auto;
+		margin-bottom: 5vh;
 	}
 
 	#first.ss-wrapper {
@@ -413,7 +467,7 @@ and (max-device-width: 736px) {
 
 	#minesweeper img {
 		height: auto !important;
-	}	
+	}
 }
 
 @media only screen
@@ -427,7 +481,7 @@ and (orientation : portrait) {
 	.summary .image {
 		margin-bottom: 2.5vh;
 	}
-	
+
 	.summary .summarytext {
 		margin: 0;
 		padding: 0 0 .25in 0;

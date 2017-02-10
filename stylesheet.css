@@ -718,8 +718,8 @@ input#submit {
 }
 
 .long {
-	height: auto;
-	width: 100%;
+	height: auto !important;
+	width: 100% !important;
 	margin-right: 0px;
 }
 
@@ -1129,4 +1129,18 @@ footer {
 footer h {
 	color: black;
 	font-size: 18px;
+}
+
+/*****************************
+ X on icon bars click
+*****************************/
+
+.navbar-toggle .fa.fa-bars.nav-icon {
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+.navbar-toggle.active .fa.fa-bars.nav-icon {
+		transform: rotate(-90deg);
+		bottom: 8px;
+		right: 6px;
 }
