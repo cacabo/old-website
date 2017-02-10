@@ -1139,8 +1139,3 @@ footer h {
     position: relative;
     transition: all 250ms ease-in-out;
 }
-.navbar-toggle.active .fa.fa-bars.nav-icon {
-		transform: rotate(-90deg);
-		bottom: 8px;
-		right: 6px;
-}
