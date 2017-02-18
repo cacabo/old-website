@@ -62,6 +62,14 @@ a {
 	text-decoration: none;
 }
 
+a:visited {
+	text-decoration: none !important;
+}
+
+.pad-top {
+	padding-top: 16px;
+}
+
 .space {
 	height: 10vh;
 	display: block;
@@ -522,6 +530,11 @@ input#submit {
 	clear: none;
 }
 
+.tall {
+	height: 1.25in;
+	width: auto !important;
+}
+
 .fact h1 {
 	font-size: 50%;
 	text-align: left;
@@ -573,6 +586,7 @@ input#submit {
 	text-align: center;
 	width: 100%;
 	display: inline-block;
+	text-decoration: none !important;
 }
 
 .resume p {
@@ -583,6 +597,11 @@ input#submit {
 	margin: 0;
 	display: inline;
 	overflow: auto;
+	text-decoration: none !important;
+}
+
+.resume a {
+	text-decoration: none !important;
 }
 
 .resume i {
@@ -998,7 +1017,8 @@ input#submit {
 }
 
 .resume-image:hover {
-	opacity: .75;
+	transition: all 0.5s ease;
+	transform: scale(1.1,1.1);
 }
 
 .image h {
