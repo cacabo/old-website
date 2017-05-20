@@ -1,0 +1,36 @@
+#title {
+    font-family: 'Unica One', cursive, Verdana, serif;
+    font-size: 600%;
+    padding-top: 5vh;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .25);
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../vector.svg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Lora', serif;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, .75);
+}
+
+.content-wrapper {
+    font-size: 150%;
+}
+
+#ty {
+    text-align: center;
+    display: none;
+}
+
+.content {
+    border-left: 6px solid white;
+    display: none;
+}
